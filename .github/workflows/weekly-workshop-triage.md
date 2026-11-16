@@ -12,6 +12,8 @@ on:
   # Manual trigger so a maintainer can run the sweep on demand.
   workflow_dispatch:
 
+model: gpt-5-mini
+
 # The agent itself only ever reads. All closing/commenting is performed by the
 # separate, scoped safe-outputs job.
 permissions:
