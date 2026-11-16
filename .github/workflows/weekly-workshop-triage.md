@@ -6,9 +6,6 @@
 # once a week and politely closes the ones that clearly belong on a participant's
 # own repository.
 on:
-  # Every Monday at 08:00 UTC.
-  schedule:
-    - cron: "0 8 * * 1"
   # Manual trigger so a maintainer can run the sweep on demand.
   workflow_dispatch:
 
