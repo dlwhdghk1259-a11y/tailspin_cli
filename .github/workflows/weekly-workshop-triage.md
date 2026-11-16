@@ -12,7 +12,9 @@ on:
   # Manual trigger so a maintainer can run the sweep on demand.
   workflow_dispatch:
 
-model: gpt-5-mini
+# Use the resilient alias so gh-aw selects a model available to this
+# repository's Copilot catalog instead of pinning an unavailable model ID.
+model: sonnet
 
 # The agent itself only ever reads. All closing/commenting is performed by the
 # separate, scoped safe-outputs job.
